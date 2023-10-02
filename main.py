@@ -25,7 +25,7 @@ def request(search: str):
 
 
 @app.get("/extra/{search}")
-def quantity(search: str, sentences: int):
+def quantity(search: str, sentences: int = 3):
     try:
         return wikipedia.summary(search, sentences=sentences)
     except:
@@ -33,5 +33,5 @@ def quantity(search: str, sentences: int):
 
 
 @app.post("/", response_model=Wiki)
-def create_req(request: Request, sentences: int):
+def create_req(request: Request, sentences: int = 3):
     return Wiki(search=request.search, sentences=sentences)
