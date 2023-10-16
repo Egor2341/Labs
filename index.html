@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Сайт-визитка</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <img src="foto.jpg" alt="Фотография" class="foto" />
+
+        <div class="info-text">
+          <h1>Антипин Егор Иванович</h1>
+          <p>Я учусь в ВУЗе МТУСИ на факультете ИТ</p>
+          <p>Мой родной город - Орск</p>
+          <p>Возраст - 18 лет</p>
+
+          <h4>Мои социальные сети</h4>
+          
+          <a href="https://github.com/Egor2341" target="_blank">GitHub</a>
+          |
+          <a target="_blank" href="https://t.me/Egorik_letofag">Telegram</a>
+        </div>
+        
+      </div>
+
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Чтение художественной литературы</li>
+          <li>Настольный теннис</li>  
+          <li>Компьютерные игры</li>
+        </ol>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="list()" class="dropbtn">Прошлые лабораторные</button>
+        <div id="dropdown" class="dropdown-content">
+          <a target="_blank" href="https://github.com/Egor2341/Labs/blob/master/Lab№1.py">Лабораторная №1</a>
+          <a target="_blank" href="https://github.com/Egor2341/Labs/blob/master/FastAPI_01.py">Лабораторная №2</a>
+          <a target="_blank" href="https://github.com/Egor2341/Labs/blob/master/add_lab_requests.py">Доп лабораторная работа</a>
+          <a target="_blank" href="#">Лабораторная №3</a>
+        </div>
+      </div>
+      
+      <script src="list.js"></script>
+      
+  </body>
+</html>
